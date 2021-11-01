@@ -8,11 +8,11 @@ class Person {
 
 class Pet extends Person {
 	public function owner() {
-		$a = $this->first;
+		$a = "Hello, " . $pet01->first . " " . $pet01->last . ". You " . $pet01->age . " years old.";
 		return $a;
 	}
 }
 
 
-$pet01 = new Person();
-echo "Hello, " . $pet01->first . " " . $pet01->last . ". You " . $pet01->age . " years old.";
+$pet01 = new Pet();
+echo $pet01->owner();
