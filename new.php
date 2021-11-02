@@ -16,3 +16,5 @@ class Pet extends Person {
 
 $pet01 = new Pet();
 echo $pet01->owner();
+$pet02 = new Pet();
+echo $pet02->owner();
