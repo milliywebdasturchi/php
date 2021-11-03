@@ -1,3 +1,3 @@
-# php
+# php dasturlash tilida yaratgan loyihlarim
 
-Hello, this is my first php project!
+Assalomu alaykum. Bu yerdagi barcha loyihlarimni PHP dasturlash tili orqali yaratganman.
