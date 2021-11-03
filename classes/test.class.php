@@ -21,4 +21,10 @@ class Test extends Dbh {
         }
     }
 
+    public function setUsersStmt($firstname, $lastname, $dob) {
+        $sql = "INSERT INTO users (user_firstName, user_lastName, user_birthDay) VALUES (?, ?, ?)";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$firstname, $lastname, $dob]);
+    }
+
 }
