@@ -10,4 +10,15 @@ class Test extends Dbh {
         }
     }
 
+    public function getUsersStmt($firstname, $lastname) {
+        $sql = "SELECT * FROM users WHERE user_firstName = ? AND user_lastName = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$firstname, $lastname]);
+        $names = $stmt->fetchAll();
+
+        foreach ($names as $name) {
+            echo $name['user_birthDay'] . '<br>';
+        }
+    }
+
 }

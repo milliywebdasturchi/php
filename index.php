@@ -10,7 +10,7 @@
 <body>
 	<?php
 		$obj = new Test();
-		echo $obj->getUsers();
+		echo $obj->getUsersStmt('Abbosbek','Muminov');
 	?>
 </body>
 </html>
