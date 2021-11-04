@@ -10,7 +10,7 @@
 <body>
 	<?php
 		$obj = new Test();
-		echo $obj->setUsersStmt('John','Doe','17.03.2000');
+		// echo $obj->setUsersStmt('John','Doe','17.03.2000');
 	?>
 </body>
 </html>
