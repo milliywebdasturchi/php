@@ -9,8 +9,13 @@
 </head>
 <body>
 	<?php
-		$obj = new Test();
-		// echo $obj->setUsersStmt('John','Doe','17.03.2000');
+		$userObj = new UsersView();
+		$userObj->showUsers("Jane");
+		
+		echo "<br>";
+		// $userObj2 = new UsersContr();
+		// $userObj2->createUser("Jane","Doe","05.09.1991");
+		
 	?>
 </body>
 </html>
